@@ -1,0 +1,80 @@
+<html>
+
+<head>
+  <title>{NAME}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+  <link rel="stylesheet" href="reportcard.css">
+  <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+
+<div class="center">
+
+{PartnerName}
+
+{PartnerStats}
+
+<!–– Impact Scores ––>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible">
+    {ImpactTitle}
+
+    <p>
+    {ImpactTable}
+    {ImpactHistograms}
+    {ImpactText}
+    </p>
+
+  </div>
+</div>
+
+<!–– Targeting Scores ––>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible">
+    {TargetingTitle}
+
+    <p>
+    {TargetingTable}
+    {TargetingHistograms}
+    {TargetingText}
+    </p>
+
+  </div>
+</div>
+
+<!–– Process Scores ––>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible">
+    {ProcessTitle}
+
+    <p>
+    {ProcessTable}
+    {ProcessHistograms}
+    {ProcessText}
+    </p>
+
+  </div>
+</div>
+
+<!–– Product Scores ––>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible">
+    {ProductTitle}
+
+    <p>
+    {ProductTable}
+    {ProductHistograms}
+    {ProductText}
+    </p>
+
+  </div>
+</div>
+
+
+</div>
+
+</body>
+</html>

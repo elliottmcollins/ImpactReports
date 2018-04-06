@@ -1,0 +1,79 @@
+body {
+    display: flex;
+    flex-direction: row;
+    margin: 30;
+}
+.center {
+    margin-left: 20%;
+    margin-top: 20;
+    width: 70%;
+    border: 3px solid green;
+    padding: 10px;
+}
+.col-1 {
+    background: #D7E8D4;
+    flex: 1;
+}
+.col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+}
+.content {
+    display: flex;
+    flex-direction: row;
+}
+.content > article {
+    flex: 4;
+    min-height: 5vh;
+}
+header, footer {
+    background: yellowgreen;
+    height: 0vh;
+}
+header, footer, article, nav {
+    padding: 1em;
+}
+    h1   {color: DarkGreen;}
+.fold {
+	background: -webkit-linear-gradient(top, #e5e5e5, #ccc);
+	padding: 10px;
+	width: 280px;
+	height: 80px;
+	color: #999;
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+.unfolder { display: none; }
+
+.toggle-label {
+	display: inline-block;
+	cursor: pointer;
+	font-size: 11px;
+	border-radius: 5px;
+	padding: 5px;
+}
+.unfold-icon, .fold-icon {
+  color: #999;
+  // fixed width to stop the icon from wiggling
+  width: 10px;
+  display: inline-block;
+}
+.unfolder ~ .fold {
+  display: none;
+}
+.unfolder ~ label .fold-icon {
+  display: none;
+}
+
+.unfolder:checked ~ .fold {
+  display: block;
+}
+.unfolder:checked ~ label .fold-icon {
+  display: inline-block;
+}
+.unfolder:checked ~ label .unfold-icon {
+  display: none;
+}
